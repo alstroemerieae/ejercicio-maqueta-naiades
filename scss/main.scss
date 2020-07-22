@@ -1,0 +1,65 @@
+@import "config";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  //   border: 1px solid red;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: $font-stack;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1;
+}
+
+body {
+  background-color: $dark-color;
+  color: $dark-color;
+}
+
+.grid {
+  margin: 0 auto;
+  width: $max-width;
+
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 465px 314px 283px 131px 125px;
+}
+
+.banner {
+  padding: 3rem 3rem 3rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: url(/img/banner-background.png);
+
+  &-logo {
+    // background: #00ff806e;
+    background-image: url(/img/banner-logo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 167px;
+    height: 59px;
+  }
+
+  &-text {
+    // background: #ffff006e;
+    color: $light-color;
+
+    &-small {
+      font-size: 16.67px;
+      padding: 0.25rem;
+      width: 90px;
+      background-color: $primary-color;
+      text-align: center;
+    }
+
+    &-large {
+      width: 407px;
+      font-size: 56.24px;
+    }
+  }
+}
