@@ -1,8 +1,8 @@
 @import "config";
 
 body {
-  background-color: $dark-color;
   color: $dark-color;
+  background-color: $dark-color;
 }
 
 .grid {
@@ -15,14 +15,13 @@ body {
 }
 
 .banner {
-  padding: 3rem;
+  padding: 3rem 3rem 4rem 3rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   background-image: url(/img/banner-background.png);
 
   &-logo {
-    // background: #00ff806e;
     background-image: url(/img/banner-logo.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -31,7 +30,6 @@ body {
   }
 
   &-text {
-    // background: #ffff006e;
     color: $light-color;
 
     &-small {
@@ -44,127 +42,131 @@ body {
 
     &-large {
       width: 407px;
-			font-size: 56.24px;
-			line-height: 1;
+      font-size: 56.24px;
+      line-height: 1;
+      letter-spacing: 1px;
     }
   }
 }
 
 .date {
-	display: grid;
-	grid-template-columns: 60% 40%;
-	
-		&-info {
-			display: flex;
-			flex-direction: column;
-			justify-content: space-around;
-			padding: 2rem 3rem;
-			background-color: $light-color;
-			font-size: 15px;
-		}
+  display: grid;
+  grid-template-columns: 60% 40%;
 
-		&-calendar {
-			background-color: $gray-color;
-			color: $primary-color;
-			display: flex;
-			flex-direction: column;
-			justify-content: space-evenly;
-			align-items: center;
-			padding: 2rem 3rem;
+  &-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 2rem 3rem 2rem 3.5rem;
+    background-color: $light-color;
+    font-size: 15px;
+  }
 
-			&-icon {
-				background-image: url(/img/calendar-icon.svg);
-				height: 50px;
-				width: 50px;
-			}
+  &-calendar {
+    background-color: $gray-color;
+    color: $primary-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2rem 3.5rem;
 
-			&-time {
-				font-size: 16px;
-				font-weight: bold;
-				text-align: center;
-				line-height: 1.6;
-			}
+    &-icon {
+      background-image: url(/img/calendar-icon.svg);
+      height: 50px;
+      width: 50px;
+    }
 
-			&-button {
-				font-size: 16.67px;
-				padding: 0.5rem;
-				width: 186px;
-				text-align: center;
-				color: $light-color;
-				background-color: $primary-color;
-			}
-		}
+    &-time {
+      font-size: 16px;
+      font-weight: bold;
+      text-align: center;
+      line-height: 1.6;
+    }
+
+    &-button {
+      font-size: 16.67px;
+      padding: 0.5rem;
+      width: 186px;
+      text-align: center;
+      color: $light-color;
+      background-color: $primary-color;
+    }
+  }
 }
 
 .video {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding: 2rem 3rem;
-	background-image: url(/img/video-section-background.png);
-	background-size: cover;
-	background-position: center;
-	box-shadow: inset 0 0 0 1000px hsla(253, 100%, 20%, 0.45);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 3rem;
+  background-color: $dark-color;
+  background-image: url(/img/video-section-background.png);
+  background-size: cover;
+  background-position: center;
+  box-shadow: inset 0 0 0 1000px hsla(253, 100%, 20%, 0.45);
 
-	&-player {
-		background-image: url(/img/video-background.png);
-		background-repeat: no-repeat;
-		height: 173px;
-		width: 308px;
-		border: 7px solid $light-color;
-		border-radius: 2%;
-		background-size: cover;
-	}
+  &-player {
+    background-image: url(/img/video-background.png);
+    background-repeat: no-repeat;
+    height: 182px;
+    width: 308px;
+    border: 7px solid $light-color;
+    border-radius: 2%;
+    background-size: cover;
+  }
 
-	&-info {
-		width: calc(100% - 308px);
-		color: $light-color;
-		font-size: 15px;
-		padding: 0rem 1rem 0rem 2rem;
-	}
+  &-info {
+    width: calc(100% - 320px);
+    color: $light-color;
+    font-size: 15px;
+    padding: 2rem 0.85rem 2rem 2rem;
+  }
 }
 
 .speaker {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-color: $light-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $light-color;
+  color: $primary-color;
 
-	p	{
-		font-size: 30.64px;
-	}
+  p {
+    font-size: 30.64px;
+  }
 }
 
 .footer {
-	background-color: $secondary-color;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 2rem 3rem;
-	color: $light-color;
+  background-color: $secondary-color;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 3rem;
+  color: $light-color;
 
-	&-info {
-		p:nth-child(2) {
-			margin-top: .25rem;
-		}
-		&-email {
-			color: $primary-color;
-			font-weight: bold;
-		}
-	}
+  &-info {
+    p:nth-child(2) {
+      margin-top: 0.25rem;
+    }
 
-	&-logo {
-			display: flex;
-			flex-direction: column;
-			align-items: flex-end;
-		
-		img {
-			width: 44.4%;
-		}
-		p {
-			text-align: right;
-			font-size: 12px;
-			margin-top: .5rem;
-		}
-	}
+    &-email {
+      color: $primary-color;
+      font-weight: bold;
+    }
+  }
+
+  &-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    img {
+      width: 44.4%;
+    }
+    p {
+      text-align: right;
+      font-size: 12px;
+      margin-top: 0.5rem;
+    }
+  }
 }

@@ -12,9 +12,13 @@ html {
   line-height: 1.2;
 }
 
+span {
+  color: #232323;
+}
+
 body {
-  background-color: #1f1f1f;
-  color: #1f1f1f;
+  color: #232323;
+  background-color: #232323;
 }
 
 .grid {
@@ -26,7 +30,7 @@ body {
 }
 
 .banner {
-  padding: 3rem;
+  padding: 3rem 3rem 4rem 3rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -53,6 +57,7 @@ body {
   width: 407px;
   font-size: 56.24px;
   line-height: 1;
+  letter-spacing: 1px;
 }
 
 .date {
@@ -63,7 +68,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding: 2rem 3rem;
+  padding: 2rem 3rem 2rem 3.5rem;
   background-color: #ffffff;
   font-size: 15px;
 }
@@ -74,7 +79,7 @@ body {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  padding: 2rem 3rem;
+  padding: 2rem 3.5rem;
 }
 .date-calendar-icon {
   background-image: url(/img/calendar-icon.svg);
@@ -101,6 +106,7 @@ body {
   justify-content: center;
   align-items: center;
   padding: 2rem 3rem;
+  background-color: #232323;
   background-image: url(/img/video-section-background.png);
   background-size: cover;
   background-position: center;
@@ -109,17 +115,17 @@ body {
 .video-player {
   background-image: url(/img/video-background.png);
   background-repeat: no-repeat;
-  height: 173px;
+  height: 182px;
   width: 308px;
   border: 7px solid #ffffff;
   border-radius: 2%;
   background-size: cover;
 }
 .video-info {
-  width: calc(100% - 308px);
+  width: calc(100% - 320px);
   color: #ffffff;
   font-size: 15px;
-  padding: 0rem 1rem 0rem 2rem;
+  padding: 2rem 0.85rem 2rem 2rem;
 }
 
 .speaker {
@@ -127,6 +133,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #ffffff;
+  color: #23135f;
 }
 .speaker p {
   font-size: 30.64px;
