@@ -123,3 +123,14 @@ body {
 		padding: 0rem 1rem 0rem 2rem;
 	}
 }
+
+.speaker {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: $light-color;
+	
+	p	{
+		font-size: 30.64px;
+	}
+}
