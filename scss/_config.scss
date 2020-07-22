@@ -1,7 +1,8 @@
 $font-stack: "Segoe UI", sans-serif;
 $max-width: 700px;
 
-$primary-color: #271d5d;
+// $primary-color: #271d5d;
+$primary-color: #23135f;
 
 $light-color: #ffffff;
 $gray-color: #f3f3f3;
@@ -21,8 +22,4 @@ html {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.2;
-}
-
-strong {
-	color: $dark-gray-color;
 }

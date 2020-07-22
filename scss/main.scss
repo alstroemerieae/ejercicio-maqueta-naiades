@@ -95,3 +95,31 @@ body {
 			}
 		}
 }
+
+.video {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 2rem 3rem;
+	background-image: url(/img/video-section-background.png);
+	background-size: cover;
+	background-position: center;
+	box-shadow: inset 0 0 0 1000px hsla(253, 100%, 20%, 0.45);
+
+	&-player {
+		background-image: url(/img/video-background.png);
+		background-repeat: no-repeat;
+		height: 173px;
+		width: 308px;
+		border: 7px solid $light-color;
+		border-radius: 2%;
+		background-size: cover;
+	}
+
+	&-info {
+		width: calc(100% - 308px);
+		color: $light-color;
+		font-size: 15px;
+		padding: 0rem 1rem 0rem 2rem;
+	}
+}
