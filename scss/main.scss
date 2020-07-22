@@ -1,20 +1,5 @@
 @import "config";
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  //   border: 1px solid red;
-}
-
-html {
-  scroll-behavior: smooth;
-  font-family: $font-stack;
-  font-size: 1rem;
-  font-weight: 300;
-  line-height: 1;
-}
-
 body {
   background-color: $dark-color;
   color: $dark-color;
@@ -30,7 +15,7 @@ body {
 }
 
 .banner {
-  padding: 3rem 3rem 3rem 3rem;
+  padding: 3rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -59,7 +44,54 @@ body {
 
     &-large {
       width: 407px;
-      font-size: 56.24px;
+			font-size: 56.24px;
+			line-height: 1;
     }
   }
+}
+
+.date {
+	display: grid;
+	grid-template-columns: 60% 40%;
+	
+		&-info {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+			padding: 2rem 3rem;
+			background-color: $light-color;
+			font-size: 15px;
+		}
+
+		&-calendar {
+			background-color: $gray-color;
+			color: $primary-color;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-evenly;
+			align-items: center;
+			padding: 2rem 3rem;
+
+			&-icon {
+				background-image: url(/img/calendar-icon.svg);
+				height: 50px;
+				width: 50px;
+			}
+
+			&-time {
+				font-size: 16px;
+				font-weight: bold;
+				text-align: center;
+				line-height: 1.6;
+			}
+
+			&-button {
+				font-size: 16.67px;
+				padding: 0.5rem;
+				width: 186px;
+				text-align: center;
+				color: $light-color;
+				background-color: $primary-color;
+			}
+		}
 }
