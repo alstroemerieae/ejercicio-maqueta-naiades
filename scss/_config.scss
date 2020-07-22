@@ -5,6 +5,7 @@ $primary-color: #271d5d;
 
 $light-color: #ffffff;
 $gray-color: #f3f3f3;
+$dark-gray-color: #232323;
 $dark-color: #1f1f1f;
 
 * {
@@ -20,4 +21,8 @@ html {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.2;
+}
+
+strong {
+	color: $dark-gray-color;
 }
