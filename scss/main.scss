@@ -129,8 +129,42 @@ body {
 	justify-content: center;
 	align-items: center;
 	background-color: $light-color;
-	
+
 	p	{
 		font-size: 30.64px;
+	}
+}
+
+.footer {
+	background-color: $secondary-color;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 2rem 3rem;
+	color: $light-color;
+
+	&-info {
+		p:nth-child(2) {
+			margin-top: .25rem;
+		}
+		&-email {
+			color: $primary-color;
+			font-weight: bold;
+		}
+	}
+
+	&-logo {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-end;
+		
+		img {
+			width: 44.4%;
+		}
+		p {
+			text-align: right;
+			font-size: 12px;
+			margin-top: .5rem;
+		}
 	}
 }

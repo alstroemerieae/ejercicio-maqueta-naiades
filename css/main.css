@@ -132,4 +132,33 @@ body {
   font-size: 30.64px;
 }
 
+.footer {
+  background-color: #7c55b5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 3rem;
+  color: #ffffff;
+}
+.footer-info p:nth-child(2) {
+  margin-top: 0.25rem;
+}
+.footer-info-email {
+  color: #23135f;
+  font-weight: bold;
+}
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.footer-logo img {
+  width: 44.4%;
+}
+.footer-logo p {
+  text-align: right;
+  font-size: 12px;
+  margin-top: 0.5rem;
+}
+
 /*# sourceMappingURL=main.css.map */
