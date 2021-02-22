@@ -19,10 +19,10 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-image: url(/img/banner-background.png);
+  background-image: url('../img/banner-background.png');
 
   &-logo {
-    background-image: url(/img/banner-logo.png);
+    background-image: url('../img/banner-logo.png');
     background-size: cover;
     background-repeat: no-repeat;
     width: 167px;
@@ -72,7 +72,7 @@ body {
     padding: 2rem 3.5rem;
 
     &-icon {
-      background-image: url(/img/calendar-icon.svg);
+      background-image: url('../img/calendar-icon.svg');
       height: 50px;
       width: 50px;
     }
@@ -101,13 +101,13 @@ body {
   align-items: center;
   padding: 2rem 3rem;
   background-color: $dark-color;
-  background-image: url(/img/video-section-background.png);
+  background-image: url('../img/video-section-background.png');
   background-size: cover;
   background-position: center;
   box-shadow: inset 0 0 0 1000px hsla(253, 100%, 20%, 0.45);
 
   &-player {
-    background-image: url(/img/video-background.png);
+    background-image: url('../img/video-background.png');
     background-repeat: no-repeat;
     height: 182px;
     width: 308px;
